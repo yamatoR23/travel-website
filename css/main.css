@@ -1,0 +1,425 @@
+/* reset =================*/
+
+* {
+    box-sizing: border-box;
+}
+
+/* general ===============*/
+
+body {
+    margin: 0;
+    color: #1E1E1E;
+    background-color: #EAE8E8;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+
+
+/* container =============*/
+
+.container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+/* header =================*/
+
+.header {
+   background-color: #EAE8E8;
+}
+
+.header__nav {
+    padding-top: 75px;
+    padding-bottom: 110px;
+}
+
+.header__nav nav {
+    
+}
+
+.header__nav ul{
+    list-style: none;
+    padding-left: 0px; 
+}
+
+.header__nav li {
+    margin-left: 70px;
+    display: inline-block;
+    
+    max-width: 50px;
+}
+
+.header__nav li:first-child {
+    margin-left: 0px;
+}
+
+.header__nav li a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header__nav li a:hover {
+    font-weight: 700;
+    transition: 0.3s;
+    
+    border: 4px solid #1E1E1E;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+/* MOBILE NAV BUTTON ============================*/
+.nav-button {
+    display: none;
+    height: 25px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.nav-button-icon {
+    display: block;
+    position: relative;
+    background-color: #1E1E1E;
+    width: 42px;
+    height: 4px;
+    border: none;
+    
+}
+
+.nav-button-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: "";
+    display: block; 
+    width: 42px;
+    height: 4px;
+    background-color: #1E1E1E;
+}
+
+.nav-button-icon::after {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: "";
+    display: block; 
+    width: 42px;
+    height: 4px;
+    background-color: #1E1E1E;
+}
+
+.contact-button {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border: 4px solid #1E1E1E;
+    border-radius: 8px;
+    padding: 15px 50px;
+}
+
+.contact-button:hover{
+    background-color: #1E1E1E;
+    color: #EAE8E8;
+    transition: 0.5s;
+}
+
+/* section 1  ============================*/
+
+.section-first {
+    background-color: #EAE8E8;
+    padding-bottom: 160px;
+}
+
+.ticket {
+    
+}
+
+.ticket__text {
+    width: 425px;
+}
+
+.ticket__text h1 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 1.0em;
+    margin: 0;
+}
+
+.ticket__text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 48px;
+}
+
+.reserve-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border: 4px solid #1E1E1E;
+    border-radius: 8px;
+    padding: 15px 50px;
+}
+
+.reserve-button:hover{
+    background-color: #EAE8E8;
+    color: #1E1E1E;
+    transition: 0.5s;
+}
+
+.ticket__img {
+    
+}
+
+
+
+/* section_second      =====================*/
+
+.section-second {
+    background-color: #1E1E1E;
+    padding-bottom: 75px;
+}
+
+.logs {
+    color: #EAE8E8;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logs h2 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 55px;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.logs p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 48px;
+}
+
+.logs-button {
+    text-decoration: none;
+    color: #EAE8E8;
+    background-color: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border: 4px solid #EAE8E8;
+    border-radius: 8px;
+    padding: 15px 50px;
+}
+
+.logs-button:hover {
+    background-color: #EAE8E8;
+    color: #1E1E1E;
+    transition: 0.5s;
+}
+}
+
+/* section third        ======================*/
+
+.section-third {
+    
+    
+}
+.gallery {
+    padding-top: 150px;
+}
+
+.gallery div {
+    width: 363px;
+}
+
+.gallery h3 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.gallery p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*===========================================*/
+
+.gallery-text {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 400px;
+    padding-bottom: 50px;
+}
+
+.gallery-text img {
+    padding-bottom: 70px;
+}
+
+.gallery-text h2 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 80px;
+    margin: 0;
+    line-height: 1;
+}
+
+.gallery-text .never {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.gallery-text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 40px;
+    
+}
+
+
+/* section-foutrh =====================================*/
+
+.section-fourth {
+    background-color: #EAE8E8;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.nature__left {
+    margin-right: 50px;
+}
+
+.nature__right {
+    
+}
+
+.nature__text {
+    margin-top: 100px;
+}
+
+.nature__text h3 {
+    font-family: 'Cardo', serif;
+    font-weight: 700;
+    font-size: 37px;
+    margin: 0;
+    line-height: 1.25;
+    text-decoration: underline;
+    padding-top: 10px;
+    margin-right: 25px;
+}
+
+.nature__text p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* footer  ==================================*/
+
+.footer {
+    background-color: #C5C5C5;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.footer__nav {
+    
+}
+
+.footer__nav h3 {
+    font-family: 'Cardo', serif;
+    width: 250px;
+    font-size: 50px;
+    line-height: 1.1;
+}
+
+.footer__nav h5 {
+    font-family: 'Lato', serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.1;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.footer__links ul {
+    list-style: none;
+    margin-left: 40px; 
+}
+
+.footer__links li {
+    margin-bottom: 15px;   
+    
+}
+
+.footer__links a {
+    text-decoration: none;
+    color: #1E1E1E;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer__links a:hover {
+    color: #EAE8DA;
+    transition: 0.2s;
+}
+
+
+footer p {
+    padding-top: 50px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
